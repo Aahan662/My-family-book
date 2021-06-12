@@ -4,13 +4,12 @@
     </head>
     <body>
         <script>
-var images=[""];
+var images=["https://i.postimg.cc/QVwQLgHS/Familypicture.jpg", "https://i.postimg.cc/LnPzmqPS/picture.jpg", "https://i.postimg.cc/YGy1CY8r/M.jpg", "https://i.postimg.cc/nMC4wScC/fatherspicture.jpg", "https://i.postimg.cc/Q9MQD0QY/Brotherpicture.jpg"]; 
 var names=["My Family","Myself - Aahan","My Mom - Charu","My Father - Rajat","My Brother - Aryan"];
 var i=0;
 function update(){
     i++;
-    var max=5;
-    if(i>max){
+    if(i>=5){
         i=0;
     }
     document.getElementById("picture").src=images[i];
@@ -18,7 +17,7 @@ function update(){
 }
         </script>
         <h1> My Family Book </h1>
-        <img src="" id="picture" style="width:30%;">
+        <img src="Familypicture.jpeg" id="picture" style="width:30%;">
         <h4 id="name">My Family</h4>
         <button onclick="update();">Next</button>
     </body>
