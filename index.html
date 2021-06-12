@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> My Family Book </title>
+    </head>
+    <body>
+        <script>
+var images=[""];
+var names=["My Family","Myself - Aahan","My Mom - Charu","My Father - Rajat","My Brother - Aryan"];
+var i=0;
+function update(){
+    i++;
+    var max=5;
+    if(i>max){
+        i=0;
+    }
+    document.getElementById("picture").src=images[i];
+    document.getElementById("name").innerHTML=names[i];
+}
+        </script>
+        <h1> My Family Book </h1>
+        <img src="" id="picture" style="width:30%;">
+        <h4 id="name">My Family</h4>
+        <button onclick="update();">Next</button>
+    </body>
+</html>
